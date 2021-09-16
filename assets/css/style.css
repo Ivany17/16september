@@ -1,5 +1,47 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+.users-cards {
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.user-card {
+  min-width: 300px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  /* align-items: center; */
+  background-color: azure;
+  margin-bottom: 20px;
+}
+
+.user-photo {
+  width: 50%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}
+
+.user-info {
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  column-span: all;
+  text-align: center;
+}
+
+.content {
+  /* column-count: 4;
+  column-width: 300px; */
+  columns: 3 400px;
+  column-rule: #5f9ea0 dotted 5px;
+  column-gap: 4em;
+  column-fill: auto;
+  text-align: justify;
 }
